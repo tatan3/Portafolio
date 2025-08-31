@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(to bottom, #ffffff, #dbeafe,#a7c7e7);
+    background: #b8e0d2;
 }
 .contenedor {
     display: flex;
@@ -11,7 +11,7 @@ body {
     flex: 1;
     background-color: #ffffff;
     border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.733);
     text-align: left;
     float: left;
     width: 33.33%;
@@ -81,10 +81,30 @@ body {
     }
 }
 
+.redessociales {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.icono img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.815);
+}
+
+.icono img:hover {
+    transform: scale(1.2);
+}
+
 h1 {
     background-color: #a7c7e7;
     padding: 15px;
     border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.815);
     text-align: center;
     font-family: "Bebas Neue", sans-serif
 }
@@ -95,4 +115,8 @@ h2 {
     border-radius: 15px;
     text-align: center;
     font-family: "Lacquer", sans-serif;
+}
+
+.texto {
+    font-family: "League Spartan", sans-serif;
 }
