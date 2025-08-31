@@ -16,7 +16,7 @@ body {
     float: left;
     width: 33.33%;
     padding: 15px;
-    height: 100%;
+    height: auto;
 }
 
 .columna h2 {
@@ -31,7 +31,7 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
     width: auto;
     text-align: left;
-    height: 100%;
+    height: auto;
     padding: 15px;
     overflow: hidden;
 }
@@ -119,4 +119,11 @@ h2 {
 
 .texto {
     font-family: "League Spartan", sans-serif;
+}
+
+.frase {
+    display: flex;
+    margin: 0 auto;
+    width: 200px;
+    height: auto;
 }
