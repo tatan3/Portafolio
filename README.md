@@ -8,6 +8,8 @@ Este proyecto consiste en un portafolio personal desarrollado con tecnologías w
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+## LINK: https://mellifluous-belekoy-315a14.netlify.app/
+
 ## Estructura del Proyecto
 
 ```bash
@@ -16,14 +18,17 @@ PORTAFOLIO/
 │   └── styles.css          # Archivo de estilos CSS
 ├── images/
 │   ├── facebook.png        # Icono de Facebook
-│   ├── frase.jpg           # Imagen con frase motivacional
+│   ├── fondo.jpg  
+    ├── frase.jpg           # Imagen con frase motivacional
 │   ├── Github.png          # Icono de GitHub
 │   ├── instagram.png       # Icono de Instagram
 │   ├── Linkedin.png        # Icono de LinkedIn
 │   ├── Marco.png           # Marco decorativo para foto de perfil
 │   ├── Perfil.webp         # Foto de perfil
 │   └── punto.png           # Imagen de punto (no utilizada en HTML)
-└── index.html              # Página principal del portafolio
+├── videos/
+     └── presentacion.mp4           # Imagen de punto (no utilizada en HTML)
+└──index.html              # Página principal del portafolio
 ```
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
