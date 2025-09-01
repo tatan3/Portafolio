@@ -199,7 +199,7 @@ hr {
 
 .video {
     text-align: center;
-    width: 100%;
-    height: 100%;
+    width: 480px;
+    height: 480px;
     border-radius: 15px;
 }
