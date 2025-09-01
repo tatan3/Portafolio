@@ -1,5 +1,6 @@
 body {
-    background: #b8e0d2;
+    background: url("../images/fondo.jpg");
+    background-size: 100%;
 }
 
 .contenedor {
@@ -10,19 +11,24 @@ body {
 
 .columna {
     flex: 1;
-    background-color: #ffffff;
-    border-radius: 15px;
+    background: linear-gradient(white, white) padding-box,
+                linear-gradient(270deg, #ff0000, #00ff00, #0000ff, #ff0000) border-box;
+    border-radius: 20px;
+    border: 8px solid transparent;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.733);
     text-align: left;
     float: left;
     width: 33.33%;
     padding: 15px;
     height: auto;
+    background-size: 400% 400%;
+    animation: rgb-border 3s linear infinite;
 }
 
-.columna h2 {
-    text-align: center;
-    font-family: "Lacquer", sans-serif;
+@keyframes rgb-border {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
 .columna2 {
@@ -90,9 +96,10 @@ body {
 }
 
 .icono img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    border-radius: 45%;
     transition: transform 0.3s ease;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.815);
 }
@@ -102,18 +109,45 @@ body {
 }
 
 h1 {
-    background-color: #a7c7e7;
-    padding: 15px;
-    border-radius: 15px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.815);
+    position: relative;
+    padding: 20px 50px;
     text-align: center;
-    font-family: "Bebas Neue", sans-serif
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 2.8px;
+    font-size: 50px;
+    border-radius: 25px;
+    border: 6px solid purple;
+    background: white;
+    box-shadow: 0 0 5px purple, 0 0 10px purple, 0 0 20px purple, 0 0 30px purple;
+    animation: h1-expand 1s ease-out forwards, h1-neon 2.5s ease-in-out infinite;
+}
+
+@keyframes h1-expand {
+    0% {
+        transform: scaleX(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scaleX(1);
+        opacity: 1;
+    }
+}
+
+@keyframes h1-neon {
+    0%, 100% {
+        box-shadow: 0 0 5px purple, 0 0 10px purple, 0 0 20px purple, 0 0 30px purple;
+        border-color: purple;
+    }
+    50% {
+        box-shadow: 0 0 15px #d291ff, 0 0 25px #d291ff, 0 0 40px #d291ff, 0 0 50px #d291ff;
+        border-color: #d291ff;
+    }
 }
 
 h2 {
     background-color: #a7c7e7;
     padding: 5px;
-    border-radius: 15px;
+    border-radius: 50% 80% / 70% 15%;
     text-align: center;
     font-family: "Lacquer", sans-serif;
 }
@@ -125,13 +159,15 @@ h2 {
 hr {
     border: none;
     height: 6px;
-    background-color: #af7ead;
-    width: 80%;
+    width: 90%;
     margin: 5px auto;
     border-radius: 10px;
+    background: black;
     transform: scaleX(0);
     transform-origin: center;
-    animation: expand-line 1.2s ease-out forwards;
+    animation: expand-line 1.2s ease-out forwards,
+               neon-pulse 2s ease-in-out infinite;
+    animation-delay: 0s, 1.2s;
 }
 
 @keyframes expand-line {
@@ -139,10 +175,20 @@ hr {
         transform: scaleX(0);
     }
     to {
-        transform: scale(1);
+        transform: scaleX(1);
     }
 }
 
+@keyframes neon-pulse {
+    0%, 100% {
+        background: black;
+        box-shadow: 0 0 0px red;
+    }
+    50% {
+        background: red;
+        box-shadow: 0 0 15px red, 0 0 25px red;
+    }
+}
 
 .frase {
     display: flex;
